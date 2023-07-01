@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SettingActivity"
+    tools:layout_editor_absoluteX="117dp"
+    tools:layout_editor_absoluteY="3dp">
+
+
+    <TextView
+        android:id="@+id/changeComplexity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:onClick="onChangeComplexity"
+        android:text="Поменять сложность"
+        android:textColor="@color/transparent"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/underSwitchCL"
+        android:layout_width="65dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/myThemeSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/myThemeSwitch"
+        app:layout_constraintTop_toTopOf="@+id/myThemeSwitch">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/thisStyle"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:src="@drawable/gradient"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/uraTW"
+        app:layout_constraintEnd_toStartOf="@+id/openIW"
+        app:layout_constraintStart_toEndOf="@+id/uraTW"
+        app:layout_constraintTop_toTopOf="@+id/uraTW"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/uraTW"
+        android:layout_width="193dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="360dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Цветовая гамма:"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:onClick="onCancelClick"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/myThemeSwitch"
+        android:layout_width="83dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="80dp"
+        android:ellipsize="middle"
+        android:filterTouchesWhenObscured="false"
+        android:gravity="center|right"
+        android:onClick="onBlackThemeClick"
+        android:password="false"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:theme="@style/MySwitch"
+        app:layout_constraintBottom_toBottomOf="@+id/darkThemeTW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/darkThemeTW"
+        app:layout_constraintTop_toTopOf="@+id/darkThemeTW"
+        app:layout_constraintVertical_bias="0.55"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/settingTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Настройки"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/darkThemeTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Темная тема:"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTW"
+        app:layout_constraintEnd_toStartOf="@+id/settingTW"
+        app:layout_constraintTop_toTopOf="@+id/settingTW"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/darkThemeTW"
+        app:layout_constraintEnd_toStartOf="@+id/darkThemeTW"
+        app:layout_constraintTop_toTopOf="@+id/darkThemeTW"
+        app:layout_constraintVertical_bias="0.423"
+        app:srcCompat="@drawable/dark_theme" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="26dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/uraTW"
+        app:layout_constraintEnd_toStartOf="@+id/uraTW"
+        app:layout_constraintTop_toTopOf="@+id/uraTW"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/colors" />
+
+    <ImageView
+        android:id="@+id/openIW"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="4dp"
+        android:onClick="onColors"
+        app:layout_constraintBottom_toBottomOf="@+id/thisStyle"
+        app:layout_constraintStart_toEndOf="@+id/thisStyle"
+        app:layout_constraintTop_toTopOf="@+id/thisStyle"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/open"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/layoutWithColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/rounded_rectangle"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/blueIW"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:onClick="onBlueStyle"
+            android:src="@drawable/blue"
+            android:visibility="invisible"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uraTW"
+            app:layout_constraintVertical_bias="0.15"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/greenIW"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:onClick="onGreenStyle"
+            android:src="@drawable/green"
+            android:visibility="invisible"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/blue"
+            app:layout_constraintTop_toBottomOf="@+id/uraTW"
+            app:layout_constraintVertical_bias="0.15"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/redIW"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:onClick="onRedStyle"
+            android:src="@drawable/red"
+            android:visibility="invisible"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uraTW"
+            app:layout_constraintVertical_bias="0.15"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pinkIW"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:onClick="onPinkStyle"
+            android:src="@drawable/pink"
+            android:visibility="invisible"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/red"
+            app:layout_constraintTop_toBottomOf="@+id/uraTW"
+            app:layout_constraintVertical_bias="0.15"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rainbowIW"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:onClick="onRainbowStyle"
+            android:src="@drawable/gradient"
+            android:visibility="invisible"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pink"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toEndOf="@+id/green"
+            app:layout_constraintTop_toBottomOf="@+id/uraTW"
+            app:layout_constraintVertical_bias="0.15"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

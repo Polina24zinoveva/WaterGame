@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_layout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game8bottles">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle1"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outPlayImageView">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle1"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b1s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b1s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b1s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b1s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bottle1"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on1Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle2"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layoutBottle1"
+        app:layout_constraintTop_toBottomOf="@+id/newBottleImageView">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle2"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b2s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b2s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b2s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b2s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bottle2"
+            android:layout_width="61dp"
+            android:layout_height="120dp"
+            android:onClick="on2Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle3"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/layoutBottle4"
+        app:layout_constraintTop_toBottomOf="@+id/newBottleImageView">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle3"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b3s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b3s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b3s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b3s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bottle3"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on3Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle4"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outPlayImageView">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle4"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b4s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b4s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b4s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b4s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bottle4"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on4Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle5"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutBottle1"
+        app:layout_constraintStart_toStartOf="@+id/layoutBottle1"
+        app:layout_constraintTop_toBottomOf="@+id/layoutBottle1">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle5"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b5s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b5s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b5s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b5s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bottle5"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on5Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle6"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutBottle2"
+        app:layout_constraintStart_toStartOf="@+id/layoutBottle2"
+        app:layout_constraintTop_toBottomOf="@+id/layoutBottle2">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle6"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b6s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b6s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b6s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b6s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bottle6"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on6Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle7"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutBottle3"
+        app:layout_constraintStart_toStartOf="@+id/layoutBottle3"
+        app:layout_constraintTop_toBottomOf="@+id/layoutBottle3">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle7"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b7s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b7s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b7s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b7s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bottle7"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on7Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottle8"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutBottle4"
+        app:layout_constraintStart_toStartOf="@+id/layoutBottle4"
+        app:layout_constraintTop_toBottomOf="@+id/layoutBottle4">
+
+        <LinearLayout
+            android:id="@+id/SloiBottle8"
+            android:layout_width="46dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottle8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b8s1"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b8s2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b8s3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/b8s4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bottle8"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:onClick="on8Bottle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bottle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+    android:id="@+id/textViewLevel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="80dp"
+    android:text="LEVEL"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/outPlayImageView"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ImageView
+    android:id="@+id/outPlayImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="85dp"
+    android:layout_marginTop="15dp"
+    android:minWidth="48dp"
+    android:minHeight="48dp"
+    android:onClick="onOutplayButton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@android:drawable/ic_menu_rotate"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+<ImageView
+    android:id="@+id/newBottleImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="85dp"
+    android:minWidth="48dp"
+    android:minHeight="48dp"
+    android:onClick="onNewBottleButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@android:drawable/ic_menu_add"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+<TextView
+    android:id="@+id/numberLevelTextView"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@+id/textViewLevel"
+    app:layout_constraintEnd_toStartOf="@+id/newBottleImageView"
+    app:layout_constraintStart_toEndOf="@+id/textViewLevel"
+    app:layout_constraintTop_toTopOf="@+id/textViewLevel" />
+
+<ImageButton
+    android:id="@+id/settingButton"
+    android:layout_width="38dp"
+    android:layout_height="40dp"
+    android:layout_marginEnd="25dp"
+    android:background="#00FFFFFF"
+    android:onClick="onSettings"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="@+id/newBottleImageView"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/newBottleImageView"
+    app:srcCompat="@android:drawable/ic_menu_manage"
+    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<ImageButton
+    android:id="@+id/soundButton"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginStart="25dp"
+    android:background="#00FFFFFF"
+    android:onClick="onSound"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="@+id/outPlayImageView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/outPlayImageView"
+    app:srcCompat="@drawable/sound"
+    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<FrameLayout
+    android:id="@+id/place_for_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
+
+</FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

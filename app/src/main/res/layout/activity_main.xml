@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_list"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/level"
+        android:layout_width="180dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="onYes"
+        android:text=" Играть"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="290dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="30dp"
+        android:max="7"
+        android:min="1"
+        android:progress="0"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressBackgroundTintMode="src_atop"
+        android:progressDrawable="@drawable/rounded_white_rectangle"
+        android:progressTint="@color/transparent"
+        android:scrollbarSize="20dp"
+        android:thumbTint="@color/white"
+        android:thumbTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/valueTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:fontFamily="sans-serif-light"
+        android:text="СЛОЖНОСТЬ:"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

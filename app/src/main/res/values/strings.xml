@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WaterGame</string>
+    <string name="rainbow">raibow</string>
+    <string name="pink">pink</string>
+    <string name="red">red</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+
+    <string-array name="colors">
+        <item>Разноцветный</item>
+        <item>Розовый</item>
+        <item>Синий</item>
+        <item>Зеленый</item>
+        <item>Красный</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
